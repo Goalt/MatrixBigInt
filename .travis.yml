@@ -1,4 +1,5 @@
 # This will run on Travis' 'new' container-based infrastructure
+language: c
 sudo: true
 
 # Blacklist
@@ -9,7 +10,7 @@ branches:
 # Environment variables
 env:
   global:
-    - GH_REPO_NAME: Goalt
+    - GH_REPO_NAME: Matrix-BigInt-library
     - DOXYFILE: $TRAVIS_BUILD_DIR/Doxyfile
     - GH_REPO_REF: github.com/Goalt/Matrix-BigInt-library.git
 
