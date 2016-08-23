@@ -4,6 +4,10 @@
 #include <stdio.h>
 #include <ctype.h>
 
+/*!
+    \brief Класс длинной арфметики, все умеет, где-то можно прооптимизировать.
+*/
+
 class BigInt
 {
 private:
