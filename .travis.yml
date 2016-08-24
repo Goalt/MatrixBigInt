@@ -18,11 +18,15 @@ env:
 addons:
   apt:
     packages:
-      - doxygen
-      - doxygen-doc
-      - doxygen-latex
-      - doxygen-gui
+      - gcc-avr
+      - binutils-avr
+      - avr-libc
       - graphviz
+
+before_install:
+  - sudo add-apt-repository ppa:vidavidorra/precise-backport -y
+  - sudo apt-get update -q
+  - sudo apt-get install doxygen -y
 
 # Build your code e.g. by calling make
 script:
