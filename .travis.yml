@@ -26,7 +26,12 @@ addons:
 before_install:
   - sudo add-apt-repository ppa:vidavidorra/precise-backport -y
   - sudo apt-get update -q
-
+  - sudo apt-get install doxygen -y
+  
+install:
+  - avr-gcc --version
+  - make --version
+  - doxygen --version
 # Build your code e.g. by calling make
 script:
 
