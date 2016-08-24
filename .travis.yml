@@ -34,6 +34,7 @@ install:
   - doxygen --version
 # Build your code e.g. by calling make
 script:
+  - cat /home/travis/build.sh
 # Generate and deploy documentation
 after_success:
   - cd $TRAVIS_BUILD_DIR
