@@ -94,6 +94,7 @@ if [ -d "html" ] && [ -f "html/index.html" ]; then
     # Force push to the remote gh-pages branch.
     # The ouput is redirected to /dev/null to hide any sensitive credential data
     # that might otherwise be exposed.
+    echo 'Pushing documentation to the gh-pages branch...!!!!!!!!!!!!!!!!!!!!!!!!!'
     git push --force "https://${GH_REPO_TOKEN}@${GH_REPO_REF}" > /dev/null 2>&1
 else
     echo '' >&2
