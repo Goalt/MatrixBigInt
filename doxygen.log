@@ -8,14 +8,13 @@ warning: Tag `CLANG_OPTIONS' at line 186 of file `/home/travis/build/Goalt/Matri
 /home/travis/build/Goalt/Matrix-BigInt-library/dictionary.h:9: warning: Compound Point is not documented.
 /home/travis/build/Goalt/Matrix-BigInt-library/matrix.h:14: warning: Compound Matrix_row_coord is not documented.
 /home/travis/build/Goalt/Matrix-BigInt-library/vector.h:8: warning: Compound Vector is not documented.
-/home/travis/build/Goalt/Matrix-BigInt-library/exception.h:7: warning: Compound Exception is not documented.
-/home/travis/build/Goalt/Matrix-BigInt-library/exception.h:56: warning: Compound Exception_matrix_sizes is not documented.
+/home/travis/build/Goalt/Matrix-BigInt-library/exception.h:60: warning: Compound Exception_matrix_sizes is not documented.
 /home/travis/build/Goalt/Matrix-BigInt-library/rational_number.h:7: warning: Compound RationalNumber is not documented.
-/home/travis/build/Goalt/Matrix-BigInt-library/exception.h:30: warning: Compound Exception_Invalid_string is not documented.
-/home/travis/build/Goalt/Matrix-BigInt-library/exception.h:22: warning: Compound Exception_Memory is not documented.
-/home/travis/build/Goalt/Matrix-BigInt-library/exception.h:47: warning: Compound Exception_Vector_border_out is not documented.
+/home/travis/build/Goalt/Matrix-BigInt-library/exception.h:34: warning: Compound Exception_Invalid_string is not documented.
+/home/travis/build/Goalt/Matrix-BigInt-library/exception.h:26: warning: Compound Exception_Memory is not documented.
+/home/travis/build/Goalt/Matrix-BigInt-library/exception.h:51: warning: Compound Exception_Vector_border_out is not documented.
 /home/travis/build/Goalt/Matrix-BigInt-library/dictionary.h:15: warning: Compound Dictionary is not documented.
-/home/travis/build/Goalt/Matrix-BigInt-library/exception.h:38: warning: Compound Exception_Matrix_border_out is not documented.
+/home/travis/build/Goalt/Matrix-BigInt-library/exception.h:42: warning: Compound Exception_Matrix_border_out is not documented.
 /home/travis/build/Goalt/Matrix-BigInt-library/rational_number.cpp:230: warning: documented symbol `RationalNumber::operator long' was not declared or defined.
 Searching for include files...
 Searching for example files...
@@ -101,7 +100,8 @@ Adding xrefitems...
 Sorting member lists...
 Computing dependencies between directories...
 Generating citations page...
-Counting data str/home/travis/build/Goalt/Matrix-BigInt-library/big_int.h:32: warning: Member BigInt(long int) (function) of class BigInt is not documented.
+Counting data str/home/travis/build/Goalt/Matrix-BigInt-library/README.md:3: warning: Unexpected html tag <img> found within <a href=...> context
+/home/travis/build/Goalt/Matrix-BigInt-library/big_int.h:32: warning: Member BigInt(long int) (function) of class BigInt is not documented.
 /home/travis/build/Goalt/Matrix-BigInt-library/big_int.h:33: warning: Member BigInt(const BigInt &) (function) of class BigInt is not documented.
 /home/travis/build/Goalt/Matrix-BigInt-library/big_int.h:34: warning: Member BigInt(char *) (function) of class BigInt is not documented.
 /home/travis/build/Goalt/Matrix-BigInt-library/big_int.h:36: warning: Member set_sign(bool) (function) of class BigInt is not documented.
@@ -161,34 +161,34 @@ Counting data str/home/travis/build/Goalt/Matrix-BigInt-library/big_int.h:32: wa
 /home/travis/build/Goalt/Matrix-BigInt-library/dictionary.h:29: warning: Member operator=(const Dictionary &) (function) of class Dictionary is not documented.
 /home/travis/build/Goalt/Matrix-BigInt-library/dictionary.h:17: warning: Member mas (variable) of class Dictionary is not documented.
 /home/travis/build/Goalt/Matrix-BigInt-library/dictionary.h:18: warning: Member size (variable) of class Dictionary is not documented.
-/home/travis/build/Goalt/Matrix-BigInt-library/exception.h:13: warning: Member Exception(const char *) (function) of class Exception is not documented.
-/home/travis/build/Goalt/Matrix-BigInt-library/exception.h:14: warning: Member Exception(const Exception &) (function) of class Exception is not documented.
-/home/travis/build/Goalt/Matrix-BigInt-library/exception.h:16: warning: Member print(FILE *) (function) of class Exception is not documented.
-/home/travis/build/Goalt/Matrix-BigInt-library/exception.h:33: warning: Member Exception_Invalid_string(char c) (function) of class Exception_Invalid_string is not documented.
-/home/travis/build/Goalt/Matrix-BigInt-library/exception.h:34: warning: Member print(FILE *f) (function) of class Exception_Invalid_string is not documented.
-/home/travis/build/Goalt/Matrix-BigInt-library/exception.h:13: warning: Member Exception(const char *) (function) of class Exception is not documented.
-/home/travis/build/Goalt/Matrix-BigInt-library/exception.h:14: warning: Member Exception(const Exception &) (function) of class Exception is not documented.
-/home/travis/build/Goalt/Matrix-BigInt-library/exception.h:16: warning: Member print(FILE *) (function) of class Exception is not documented.
-/home/travis/build/Goalt/Matrix-BigInt-library/exception.h:41: warning: Member Exception_Matrix_border_out(size_t n, size_t m, size_t k, size_t l) (function) of class Exception_Matrix_border_out is not documented.
-/home/travis/build/Goalt/Matrix-BigInt-library/exception.h:42: warning: Member print(FILE *f) (function) of class Exception_Matrix_border_out is not documented.
-/home/travis/build/Goalt/Matrix-BigInt-library/exception.h:13: warning: Member Exception(const char *) (function) of class Exception is not documented.
-/home/travis/build/Goalt/Matrix-BigInt-library/exception.h:14: warning: Member Exception(const Exception &) (function) of class Exception is not documented.
-/home/travis/build/Goalt/Matrix-BigInt-library/exception.h:16: warning: Member print(FILE *) (function) of class Exception is not documented.
-/home/travis/build/Goalt/Matrix-BigInt-library/exception.h:59: warning: Member Exception_matrix_sizes(size_t n1, size_t m1, size_t n2, size_t m2) (function) of class Exception_matrix_sizes is not documented.
-/home/travis/build/Goalt/Matrix-BigInt-library/exception.h:60: warning: Member print(FILE *f) (function) of class Exception_matrix_sizes is not documented.
-/home/travis/build/Goalt/Matrix-BigInt-library/exception.h:13: warning: Member Exception(const char *) (function) of class Exception is not documented.
-/home/travis/build/Goalt/Matrix-BigInt-library/exception.h:14: warning: Member Exception(const Exception &) (function) of class Exception is not documented.
-/home/travis/build/Goalt/Matrix-BigInt-library/exception.h:16: warning: Member print(FILE *) (function) of class Exception is not documented.
-/home/travis/build/Goalt/Matrix-BigInt-library/exception.h:25: warning: Member Exception_Memory(size_t n_bytes) (function) of class Exception_Memory is not documented.
-/home/travis/build/Goalt/Matrix-BigInt-library/exception.h:26: warning: Member print(FILE *f) (function) of class Exception_Memory is not documented.
-/home/travis/build/Goalt/Matrix-BigInt-library/exception.h:13: warning: Member Exception(const char *) (function) of class Exception is not documented.
-/home/travis/build/Goalt/Matrix-BigInt-library/exception.h:14: warning: Member Exception(const Exception &) (function) of class Exception is not documented.
-/home/travis/build/Goalt/Matrix-BigInt-library/exception.h:16: warning: Member print(FILE *) (function) of class Exception is not documented.
-/home/travis/build/Goalt/Matrix-BigInt-library/exception.h:50: warning: Member Exception_Vector_border_out(size_t n, size_t k) (function) of class Exception_Vector_border_out is not documented.
-/home/travis/build/Goalt/Matrix-BigInt-library/exception.h:51: warning: Member print(FILE *f) (function) of class Exception_Vector_border_out is not documented.
-/home/travis/build/Goalt/Matrix-BigInt-library/exception.h:13: warning: Member Exception(const char *) (function) of class Exception is not documented.
-/home/travis/build/Goalt/Matrix-BigInt-library/exception.h:14: warning: Member Exception(const Exception &) (function) of class Exception is not documented.
-/home/travis/build/Goalt/Matrix-BigInt-library/exception.h:16: warning: Member print(FILE *) (function) of class Exception is not documented.
+/home/travis/build/Goalt/Matrix-BigInt-library/exception.h:17: warning: Member Exception(const char *) (function) of class Exception is not documented.
+/home/travis/build/Goalt/Matrix-BigInt-library/exception.h:18: warning: Member Exception(const Exception &) (function) of class Exception is not documented.
+/home/travis/build/Goalt/Matrix-BigInt-library/exception.h:20: warning: Member print(FILE *) (function) of class Exception is not documented.
+/home/travis/build/Goalt/Matrix-BigInt-library/exception.h:37: warning: Member Exception_Invalid_string(char c) (function) of class Exception_Invalid_string is not documented.
+/home/travis/build/Goalt/Matrix-BigInt-library/exception.h:38: warning: Member print(FILE *f) (function) of class Exception_Invalid_string is not documented.
+/home/travis/build/Goalt/Matrix-BigInt-library/exception.h:17: warning: Member Exception(const char *) (function) of class Exception is not documented.
+/home/travis/build/Goalt/Matrix-BigInt-library/exception.h:18: warning: Member Exception(const Exception &) (function) of class Exception is not documented.
+/home/travis/build/Goalt/Matrix-BigInt-library/exception.h:20: warning: Member print(FILE *) (function) of class Exception is not documented.
+/home/travis/build/Goalt/Matrix-BigInt-library/exception.h:45: warning: Member Exception_Matrix_border_out(size_t n, size_t m, size_t k, size_t l) (function) of class Exception_Matrix_border_out is not documented.
+/home/travis/build/Goalt/Matrix-BigInt-library/exception.h:46: warning: Member print(FILE *f) (function) of class Exception_Matrix_border_out is not documented.
+/home/travis/build/Goalt/Matrix-BigInt-library/exception.h:17: warning: Member Exception(const char *) (function) of class Exception is not documented.
+/home/travis/build/Goalt/Matrix-BigInt-library/exception.h:18: warning: Member Exception(const Exception &) (function) of class Exception is not documented.
+/home/travis/build/Goalt/Matrix-BigInt-library/exception.h:20: warning: Member print(FILE *) (function) of class Exception is not documented.
+/home/travis/build/Goalt/Matrix-BigInt-library/exception.h:63: warning: Member Exception_matrix_sizes(size_t n1, size_t m1, size_t n2, size_t m2) (function) of class Exception_matrix_sizes is not documented.
+/home/travis/build/Goalt/Matrix-BigInt-library/exception.h:64: warning: Member print(FILE *f) (function) of class Exception_matrix_sizes is not documented.
+/home/travis/build/Goalt/Matrix-BigInt-library/exception.h:17: warning: Member Exception(const char *) (function) of class Exception is not documented.
+/home/travis/build/Goalt/Matrix-BigInt-library/exception.h:18: warning: Member Exception(const Exception &) (function) of class Exception is not documented.
+/home/travis/build/Goalt/Matrix-BigInt-library/exception.h:20: warning: Member print(FILE *) (function) of class Exception is not documented.
+/home/travis/build/Goalt/Matrix-BigInt-library/exception.h:29: warning: Member Exception_Memory(size_t n_bytes) (function) of class Exception_Memory is not documented.
+/home/travis/build/Goalt/Matrix-BigInt-library/exception.h:30: warning: Member print(FILE *f) (function) of class Exception_Memory is not documented.
+/home/travis/build/Goalt/Matrix-BigInt-library/exception.h:17: warning: Member Exception(const char *) (function) of class Exception is not documented.
+/home/travis/build/Goalt/Matrix-BigInt-library/exception.h:18: warning: Member Exception(const Exception &) (function) of class Exception is not documented.
+/home/travis/build/Goalt/Matrix-BigInt-library/exception.h:20: warning: Member print(FILE *) (function) of class Exception is not documented.
+/home/travis/build/Goalt/Matrix-BigInt-library/exception.h:54: warning: Member Exception_Vector_border_out(size_t n, size_t k) (function) of class Exception_Vector_border_out is not documented.
+/home/travis/build/Goalt/Matrix-BigInt-library/exception.h:55: warning: Member print(FILE *f) (function) of class Exception_Vector_border_out is not documented.
+/home/travis/build/Goalt/Matrix-BigInt-library/exception.h:17: warning: Member Exception(const char *) (function) of class Exception is not documented.
+/home/travis/build/Goalt/Matrix-BigInt-library/exception.h:18: warning: Member Exception(const Exception &) (function) of class Exception is not documented.
+/home/travis/build/Goalt/Matrix-BigInt-library/exception.h:20: warning: Member print(FILE *) (function) of class Exception is not documented.
 /home/travis/build/Goalt/Matrix-BigInt-library/matrix.h:35: warning: Member Matrix(size_t, size_t, bool is_Identity=false) (function) of class Matrix is not documented.
 /home/travis/build/Goalt/Matrix-BigInt-library/matrix.h:36: warning: Member Matrix(size_t, size_t, const RationalNumber &) (function) of class Matrix is not documented.
 /home/travis/build/Goalt/Matrix-BigInt-library/matrix.h:37: warning: Member Matrix(const Matrix &) (function) of class Matrix is not documented.
