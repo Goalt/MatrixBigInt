@@ -1,45 +1,35 @@
-# This will run on Travis' 'new' container-based infrastructure
 language: cpp
 sudo: true
-
-# Blacklist
 branches:
   except:
-    - gh-pages
-
-# Environment variables
+  - gh-pages
 env:
   global:
-    - GH_REPO_NAME: Matrix-BigInt-library
-    - DOXYFILE: $TRAVIS_BUILD_DIR/Doxyfile
-    - GH_REPO_REF: github.com/Goalt/Matrix-BigInt-library.git
-    - secure: "f5aaa17990bcd8e7c122b363705e1f5bf04812be"
-# Install dependencies
+  - GH_REPO_NAME: Matrix-BigInt-library
+  - DOXYFILE: $TRAVIS_BUILD_DIR/Doxyfile
+  - GH_REPO_REF: github.com/Goalt/Matrix-BigInt-library.git
+  - secure: f5aaa17990bcd8e7c122b363705e1f5bf04812be
+  - secure: 32NKjeEbkHG990wti1IF9j68lFAuZZUhARAJx8kUVTSl9/M7qaLq9cIjknYWEkdss8OzwvMV6PeuRLlYwMyOB1wZUEyDT6B8/CiIrMvmV1yRa8Dk569UNxz1NtgPKlBd8EHP/Yw76ZVUZxVKdaaygnLABARKJ1zyca0VrA+PccY4g1SkN/kMbCohyN/0f3m2mcozkxcxtKxzEoOoGtS3cf0SB46Qqtd56i5Xl7rWH6pqLjhD+RCu3QFUX5vVkj0Ua3xqslkHpEK4R1Mzns1S2yH6DU1N3seuIxSKoBHy2y9xIj3/K7CmD1jiUakP9RlX+JVta6+e92Fx+p4vmBZ3mHHqNc9VrUY7vXWGGWsDZ5LykdghjSkkQF1l1GplShac4AI80bOuebEOfAvsS6MkVWfaRwn7ipWryh2pxp4Wx6Pp9SaqpGzCNqIJBr5tX8Q1qpNSER4ac3gegXSJYktyBqdcXApwoSMcajEykcmlZMuz4sLLiTtLfJrwTFfPnP0HVJxhM4fJR4xPlOY7TW647H9cdPe0CXaKjGIkPMr8WYc8z2+UAQQhYhgkhIRnpqXU63cmCb+/ZqbV6nnE3ZQbta24wGQ5dQl9tW0fcGbtwzv78xhSpXtAZBIVyo4Pu6oHyj5uMGDNh/Mc3vHnRdz1bkTmUQxQ0h9K5AfTNpyDbes=
 addons:
   apt:
     packages:
-      - gcc-avr
-      - binutils-avr
-      - avr-libc
-      - graphviz
-
+    - gcc-avr
+    - binutils-avr
+    - avr-libc
+    - graphviz
 before_install:
-  - sudo add-apt-repository ppa:vidavidorra/precise-backport -y
-  - sudo apt-get update -q
-  - sudo apt-get install doxygen -y
-  
+- sudo add-apt-repository ppa:vidavidorra/precise-backport -y
+- sudo apt-get update -q
+- sudo apt-get install doxygen -y
 install:
-  - avr-gcc --version
-  - make --version
-  - doxygen --version
-# Build your code e.g. by calling make
+- avr-gcc --version
+- make --version
+- doxygen --version
 script:
-  - cat /home/travis/build.sh
-  
-# Generate and deploy documentation
+- cat /home/travis/build.sh
 after_success:
-  - git config credential.helper "store --file=.git/credentials"
-  - echo "https://${GH_TOKEN}:@github.com" > .git/credentials
-  - cd $TRAVIS_BUILD_DIR
-  - chmod +x generateDocumentationAndDeploy.sh
-  - ./generateDocumentationAndDeploy.sh
+- git config credential.helper "store --file=.git/credentials"
+- echo "https://${GH_TOKEN}:@github.com" > .git/credentials
+- cd $TRAVIS_BUILD_DIR
+- chmod +x generateDocumentationAndDeploy.sh
+- ./generateDocumentationAndDeploy.sh
