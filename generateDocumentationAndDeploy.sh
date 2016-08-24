@@ -43,16 +43,16 @@ set -e
 mkdir code_docs
 cd code_docs
 
-# Get the current gh-pages branch
-git clone -b gh-pages https://git@$GH_REPO_REF
-cd $GH_REPO_NAME
-
 ##### Configure git.
 # Set the push default to simple i.e. push only the current branch.
 git config --global push.default simple
 # Pretend to be an user called Travis CI.
 git config user.name "Travis CI"
 git config user.email "travis@travis-ci.org"
+
+# Get the current gh-pages branch
+git clone -b gh-pages https://git@$GH_REPO_REF
+cd $GH_REPO_NAME
 
 # Remove everything currently in the gh-pages branch.
 # GitHub is smart enough to know which files have changed and which files have
