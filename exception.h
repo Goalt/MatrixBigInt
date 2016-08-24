@@ -3,6 +3,10 @@
 
 #include <cstdio>
 
+/*!
+    \brief Класс исключений.
+*/
+
 class Exception
 {
 private:
