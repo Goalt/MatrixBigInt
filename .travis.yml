@@ -26,7 +26,6 @@ addons:
 before_install:
   - sudo add-apt-repository ppa:vidavidorra/precise-backport -y
   - sudo apt-get update -q
-  - sudo apt-get install doxygen -y
 
 # Build your code e.g. by calling make
 script:
