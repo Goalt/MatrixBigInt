@@ -13,7 +13,7 @@ env:
     - GH_REPO_NAME: Matrix-BigInt-library
     - DOXYFILE: $TRAVIS_BUILD_DIR/Doxyfile
     - GH_REPO_REF: github.com/Goalt/Matrix-BigInt-library.git
-
+    - secure: "f5aaa17990bcd8e7c122b363705e1f5bf04812be"
 # Install dependencies
 addons:
   apt:
@@ -35,6 +35,11 @@ install:
 # Build your code e.g. by calling make
 script:
   - cat /home/travis/build.sh
+
+after_script:
+  - git config credential.helper "store --file=.git/credentials"
+  - echo "https://${GH_TOKEN}:@github.com" > .git/credentials
+  
 # Generate and deploy documentation
 after_success:
   - cd $TRAVIS_BUILD_DIR
