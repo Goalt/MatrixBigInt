@@ -47,8 +47,8 @@ cd code_docs
 # Set the push default to simple i.e. push only the current branch.
 git config --global push.default simple
 # Pretend to be an user called Travis CI.
-git config user.name "Travis CI"
-git config user.email "travis@travis-ci.org"
+git config --global user.name "Travis CI"
+git config --global user.email "travis@travis-ci.org"
 
 # Get the current gh-pages branch
 git clone -b gh-pages ssh://git@$GH_REPO_REF
